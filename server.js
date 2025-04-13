@@ -39,4 +39,8 @@ app.post("/contact-form", async (req, res) => {
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Servidor node.js rodando com sucesso!");
+});
+
 app.listen(port, () => console.log(`Server running on port ${port}`));
