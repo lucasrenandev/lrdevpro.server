@@ -33,12 +33,12 @@ app.post("/contact-form", async (req, res) => {
     }
     catch(error) {
         console.error("Erro ao enviar e-mail:", error);
-        res.status(500).json({sucess: false, message: "Erro ao enviar e-mail"});
+        res.status(500).json({sucess: false, message: "Erro ao enviar e-mail!"});
     }
 });
 
 app.get("/", (req, res) => {
-    res.send("Servidor node.js rodando com sucesso!");
+    res.send("Servidor rodando com sucesso!");
 });
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
