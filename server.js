@@ -34,7 +34,7 @@ app.post("/contact-form", async (req, res) => {
         res.status(200).json({sucess: true, message: "Sucesso ao enviar e-mail!"});
     }
     catch(error) {
-        console.error(error);
+        console.error("Erro ao enviar e-mail:", error);
         res.status(500).json({sucess: false, message: "Erro ao enviar e-mail"});
     }
 });
